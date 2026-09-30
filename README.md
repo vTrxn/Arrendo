@@ -1,11 +1,11 @@
-# 🏠 Sistema Integral de Gestión Inmobiliaria - ARRENDO
+# Sistema Integral de Gestión Inmobiliaria - ARRENDO
 **Fundación Universitaria Empresarial de la Cámara de Comercio de Bogotá (Uniempresarial)**  
 **Facultad de Ingeniería de Software | Arquitectura de Software y Sistemas Distribuidos (Norma IEEE 830)**  
 **Bogotá D.C., Colombia - 2026**
 
 ---
 
-## 🌟 Resumen del Proyecto
+## Resumen del Proyecto
 
 **ARRENDO** es una plataforma corporativa distribuida para la administración integral de contratos de arrendamiento, inmuebles, inquilinos y control de incidencias de mantenimiento. 
 
@@ -17,7 +17,7 @@ Implementa una **arquitectura en capas desacoplada** con:
 
 ---
 
-## 🏗️ Estructura del Repositorio
+## Estructura del Repositorio
 
 ```
 Arrendo/
@@ -42,7 +42,7 @@ Arrendo/
 
 ---
 
-## ☁️ Despliegue Gratuito en la Nube (Render + Supabase)
+## Despliegue Gratuito en la Nube (Render + Supabase)
 
 ### 1. Base de Datos en Supabase (Ya Configurada y Activa)
 - **Proveedor:** [Supabase](https://supabase.com) (PostgreSQL en la Nube)
@@ -68,7 +68,7 @@ Arrendo/
 
 ---
 
-## 📱 Ejecución de la App Móvil en Android Studio
+## Ejecución de la App Móvil en Android Studio
 
 1. Abre **Android Studio**.
 2. Selecciona **File > Open...** y abre la carpeta `android/` de este repositorio.
@@ -83,11 +83,11 @@ Arrendo/
    ```
    *(Y ejecuta en el PC: `adb reverse tcp:8080 tcp:8080`)*.
 6. Conecta el celular Android físico al computador con depuración USB activada.
-7. Haz clic en el botón verde **Run (▶)** (`Shift + F10`).
+7. Haz clic en el botón verde **Run** (`Shift + F10`).
 
 ---
 
-## 🧪 Pruebas con Postman (`Arrendo_Postman_Collection.json`)
+## Pruebas con Postman (Arrendo_Postman_Collection.json)
 
 El repositorio incluye la colección de Postman preconfigurada:
 1. Abre Postman y pulsa **Import**.
@@ -102,7 +102,7 @@ El repositorio incluye la colección de Postman preconfigurada:
 
 ---
 
-## 🔐 Seguridad y Autenticación JWT
+## Seguridad y Autenticación JWT
 
 El sistema cuenta con un filtro interceptor `JwtAuthorizationFilter` en Spring Security. Todas las rutas bajo `/api/v1/**` requieren la cabecera HTTP:
 ```http
