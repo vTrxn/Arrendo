@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    fragment_login.xml: Layout de interfaz en XML para el Inicio de Sesión / Autenticación (RF01).
+    Contiene controles predeterminados en XML tal como se arrastran desde la Paleta de Android Studio.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <!-- <TextView>: Título principal de la pantalla de Login -->
+    <TextView
+        android:id="@+id/tvTituloLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Inicio de Sesión - Arrendo (RF01)"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Ingrese sus credenciales de administrador:" />
+
+    <!-- <EditText>: Campo para capturar el nombre de usuario -->
+    <EditText
+        android:id="@+id/etUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:hint="Nombre de Usuario"
+        android:inputType="text" />
+
+    <!-- <EditText>: Campo para capturar la contraseña con caracteres ocultos -->
+    <EditText
+        android:id="@+id/etClave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:hint="Contraseña"
+        android:inputType="textPassword" />
+
+    <!-- <TextView>: Mensaje para notificar errores de autenticación -->
+    <TextView
+        android:id="@+id/tvErrorLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:textColor="#FF0000"
+        android:visibility="gone" />
+
+    <!-- <Button>: Botón para ejecutar la autenticación -->
+    <Button
+        android:id="@+id/btnIngresar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Ingresar" />
+
+</LinearLayout>

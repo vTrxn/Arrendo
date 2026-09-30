@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    nav_graph.xml: Mapa o Grafo de Navegación de Jetpack Navigation Component.
+-->
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/inicioFragment">
+
+    <!-- Destino 1: Dashboard de Inicio -->
+    <fragment
+        android:id="@+id/inicioFragment"
+        android:name="co.edu.ue.ui.fragments.InicioFragment"
+        android:label="Dashboard Principal"
+        tools:layout="@layout/fragment_inicio">
+        <action
+            android:id="@+id/action_inicio_to_inmuebles"
+            app:destination="@id/inmueblesFragment" />
+        <action
+            android:id="@+id/action_inicio_to_arrendatarios"
+            app:destination="@id/arrendatariosFragment" />
+        <action
+            android:id="@+id/action_inicio_to_contratos"
+            app:destination="@id/contratosFragment" />
+        <action
+            android:id="@+id/action_inicio_to_mantenimientos"
+            app:destination="@id/mantenimientosFragment" />
+    </fragment>
+
+    <!-- Destino 2: Gestión de Inmuebles (RF02) -->
+    <fragment
+        android:id="@+id/inmueblesFragment"
+        android:name="co.edu.ue.ui.fragments.InmueblesFragment"
+        android:label="Gestión de Inmuebles"
+        tools:layout="@layout/fragment_inmuebles" />
+
+    <!-- Destino 3: Gestión de Arrendatarios y Contactos (RF03) -->
+    <fragment
+        android:id="@+id/arrendatariosFragment"
+        android:name="co.edu.ue.ui.fragments.ArrendatariosFragment"
+        android:label="Gestión de Arrendatarios"
+        tools:layout="@layout/fragment_arrendatarios" />
+
+    <!-- Destino 4: Gestión de Contratos y Pagos (RF04) -->
+    <fragment
+        android:id="@+id/contratosFragment"
+        android:name="co.edu.ue.ui.fragments.ContratosFragment"
+        android:label="Gestión de Contratos"
+        tools:layout="@layout/fragment_contratos" />
+
+    <!-- Destino 5: Mantenimientos e Incidencias con Cámara (RF05) -->
+    <fragment
+        android:id="@+id/mantenimientosFragment"
+        android:name="co.edu.ue.ui.fragments.MantenimientosFragment"
+        android:label="Mantenimientos y Cámara"
+        tools:layout="@layout/fragment_mantenimientos" />
+
+</navigation>

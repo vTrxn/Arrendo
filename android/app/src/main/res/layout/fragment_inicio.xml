@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    fragment_inicio.xml: Layout de interfaz en XML para el Dashboard Principal (RF08).
+-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvTituloDashboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dashboard Principal (RF08)"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Resumen de Control de Arriendos:"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvInmueblesCount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="- Inmuebles registrados: 0" />
+
+        <TextView
+            android:id="@+id/tvArrendatariosCount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="- Inquilinos registrados: 0" />
+
+        <TextView
+            android:id="@+id/tvContratosCount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="- Contratos activos: 0" />
+
+        <TextView
+            android:id="@+id/tvMantenimientosCount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="- Mantenimientos/Daños: 0" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Navegación a Módulos:"
+            android:textStyle="bold" />
+
+        <!-- Botones sin modificar en XML, tal como se arrastran por primera vez desde la Paleta -->
+        <Button
+            android:id="@+id/btnIrInmuebles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Gestión de Inmuebles (RF02)" />
+
+        <Button
+            android:id="@+id/btnIrArrendatarios"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Gestión de Arrendatarios / Contactos (RF03)" />
+
+        <Button
+            android:id="@+id/btnIrContratos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Contratos y Pagos Manuales (RF04)" />
+
+        <Button
+            android:id="@+id/btnIrMantenimientos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Incidencias, Daños y Cámara (RF05)" />
+
+    </LinearLayout>
+</ScrollView>

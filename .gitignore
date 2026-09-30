@@ -1,0 +1,49 @@
+# Archivos compilados y temporales
+*.class
+*.log
+*.ctxt
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Maven
+backend/target/
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+# Gradle
+.gradle/
+android/.gradle/
+android/app/build/
+android/build/
+build/
+local.properties
+android/local.properties
+
+# IDEs y Editores
+.idea/
+*.iml
+.classpath
+.project
+.settings/
+.vscode/
+*.swp
+*.bak
+*~
+
+# Sistema Operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Android Studio Caches
+captures/
+.externalNativeBuild/
+.cxx/

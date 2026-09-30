@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: arrendo-backend
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    plan: free
+    region: ohio
+    healthCheckPath: /api/swagger-ui/index.html
+    envVars:
+      - key: SPRING_DATASOURCE_URL
+        value: jdbc:postgresql://aws-0-us-east-2.pooler.supabase.com:5432/postgres?sslmode=require
+      - key: SPRING_DATASOURCE_USERNAME
+        value: postgres.xiejuueuxqheyiawxffz
+      - key: SPRING_DATASOURCE_PASSWORD
+        value: Pñ5+1r´ñ´3{

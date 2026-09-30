@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    activity_main.xml: Layout principal de la pantalla MainActivity.
+    Estructurado con un FrameLayout raíz que respeta las barras del sistema (fitsSystemWindows).
+    Contiene:
+    1. Un ScrollView independiente para el Dashboard principal (id: llDashboardMain).
+    2. Un FrameLayout a pantalla completa para inflar los fragmentos de cada módulo (id: fragmentContainer).
+-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <!-- ScrollView que contiene toda la interfaz del Dashboard Principal -->
+    <ScrollView
+        android:id="@+id/llDashboardMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:paddingStart="16dp"
+        android:paddingTop="20dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- <TextView>: Título principal del sistema Arrendo -->
+            <TextView
+                android:id="@+id/tvTituloMain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dashboard Principal (RF08)"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Resumen de Control de Arriendos (SQLite):"
+                android:textStyle="bold" />
+
+            <!-- TextViews para los contadores en tiempo real desde Room / Spring Boot -->
+            <TextView
+                android:id="@+id/tvInmueblesCount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="- Inmuebles registrados: 0" />
+
+            <TextView
+                android:id="@+id/tvArrendatariosCount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="- Inquilinos registrados: 0" />
+
+            <TextView
+                android:id="@+id/tvContratosCount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="- Contratos activos: 0" />
+
+            <TextView
+                android:id="@+id/tvMantenimientosCount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="- Mantenimientos/Daños: 0" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Módulos del Sistema:"
+                android:textStyle="bold" />
+
+            <!-- Botones predeterminados planos en XML tal como se arrastran por primera vez desde la Paleta -->
+            <Button
+                android:id="@+id/btnIrInmuebles"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Gestión de Inmuebles (RF02)" />
+
+            <Button
+                android:id="@+id/btnIrArrendatarios"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Gestión de Arrendatarios / Contactos (RF03)" />
+
+            <Button
+                android:id="@+id/btnIrContratos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Contratos y Pagos Manuales (RF04)" />
+
+            <Button
+                android:id="@+id/btnIrMantenimientos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Incidencias, Daños y Cámara (RF05)" />
+
+            <!-- Botón para cerrar sesión activa -->
+            <Button
+                android:id="@+id/btnCerrarSesion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Cerrar Sesión" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- <FrameLayout>: Contenedor a pantalla completa para inflar los fragmentos de cada módulo -->
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+</FrameLayout>

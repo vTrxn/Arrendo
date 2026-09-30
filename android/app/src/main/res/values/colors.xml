@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Paleta Corporativa Slate Neutra Profesional (Sin Morado Material 3) -->
+    <color name="primary">#1E293B</color>
+    <color name="primary_dark">#0F172A</color>
+    <color name="primary_variant">#334155</color>
+    <color name="secondary">#475569</color>
+    <color name="secondary_variant">#334155</color>
+
+    <color name="background_light">#F8FAFC</color>
+    <color name="surface_card">#FFFFFF</color>
+    <color name="text_primary">#0F172A</color>
+    <color name="text_secondary">#475569</color>
+    <color name="border_neutral">#CBD5E1</color>
+
+    <!-- Botones Neutros Planos Predeterminados -->
+    <color name="btn_neutral_bg">#334155</color>
+    <color name="btn_neutral_text">#FFFFFF</color>
+    <color name="btn_danger_bg">#DC2626</color>
+    <color name="btn_success_bg">#16A34A</color>
+
+    <!-- Compatibilidad con identificadores estándar eliminando tonos morados -->
+    <color name="purple_200">#334155</color>
+    <color name="purple_500">#1E293B</color>
+    <color name="purple_700">#0F172A</color>
+    <color name="teal_200">#475569</color>
+    <color name="teal_700">#334155</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>
