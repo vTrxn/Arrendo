@@ -19,19 +19,9 @@ class ClienteVolley private constructor(contexto: Context) {
 
     companion object {
         // Variable con la URL base del backend Spring Boot.
-        // - Para Emulador: "http://10.0.2.2:8080/api/"
-        // - Para Celular Físico por cable USB (adb reverse): "http://localhost:8080/api/"
-        // - Para WiFi: Se puede sobreescribir con "http://<IP_PC>:8080/api/"
-        var URL_BASE: String = if (android.os.Build.FINGERPRINT.contains("generic")
-            || android.os.Build.MODEL.contains("google_sdk")
-            || android.os.Build.MODEL.contains("Emulator")
-            || android.os.Build.HARDWARE.contains("goldfish")
-            || android.os.Build.HARDWARE.contains("ranchu")
-        ) {
-            "http://10.0.2.2:8080/api/"
-        } else {
-            "http://localhost:8080/api/"
-        }
+        // - Servidor en la Nube oficial (Render.com + Supabase): "https://arrendo-backend.onrender.com/api/"
+        // - Servidor Local por cable USB (adb reverse): "http://localhost:8080/api/"
+        var URL_BASE: String = "https://arrendo-backend.onrender.com/api/"
 
         // Variable estática para guardar el Token JWT cuando el usuario inicia sesión
         var tokenJwtGuardado: String? = null
